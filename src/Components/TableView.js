@@ -14,6 +14,7 @@ const RowItem = ({ todo, toggleSelect, toggleComplete }) => (
     </th>
     <th>{todo.time.toDateString()}</th>
     <th>{todo.text}</th>
+    <th>{todo.description}</th>
     <th>
       <Button
         color={todo.isComplete ? 'danger' : 'success'}
@@ -39,6 +40,7 @@ const TableView = ({ todos, toggleSelect, toggleComplete }) => {
           <th>#</th>
           <th>Time</th>
           <th>Todo</th>
+          <th>Description</th>
           <th>Action</th>
         </tr>
       </thead>
